@@ -1,0 +1,33 @@
+.mainslider img{
+    height:580px;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-caption {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    top: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.carousel-caption h1, .carousel-caption p {
+    color: var(--white);
+}
+.carousel-caption h1 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 500;
+}
+.carousel-caption p {
+    margin: 10px 0 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.carousel-caption a {
+    margin: 0 5px;
+}
