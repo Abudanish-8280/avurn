@@ -278,6 +278,7 @@ a.btn.btn-light {
     display: block;
     margin-top: 18px;
     font-weight: 600;
+    text-shadow: 3px 3px #00000029;
 }
   
   .mainbanner img {
@@ -708,7 +709,7 @@ a.btn.btn-light {
     background: #fafaff;
 }
 .homecontact-dtls {
-    padding: 30px;
+    padding: 35px;
     background: var(--white);
     box-shadow: 0 0 12px #0000001a;
     height: 100%;
