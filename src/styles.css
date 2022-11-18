@@ -3,8 +3,8 @@
 :root {
     --primary: #ff3273;
     --secondary: #092054;
-    --white:#fff;
-    --dark:#000;
+    --white: #fff;
+    --dark: #000;
 }
 
 body {
@@ -116,7 +116,7 @@ ul, li, a {
     font-size: 16px;
     text-decoration: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 a:hover {
@@ -126,10 +126,11 @@ a:hover {
 
 .heading, .leftheading {
     margin-bottom: 30px;
-    font-size: 34px;
+    font-size: 36px;
     position: relative;
     font-weight: 600;
 }
+
 .leftheading span, .heading span {
     font-family: 'Kanit', sans-serif;
     display: block;
@@ -139,6 +140,7 @@ a:hover {
     letter-spacing: 4px;
     margin-bottom: 5px;
 }
+
 .heading strong, .leftheading strong {
     font-size: 17px;
     display: block;
@@ -147,15 +149,19 @@ a:hover {
     margin: 5px auto 0;
     line-height: 28px;
 }
+
 .leftheading strong {
-    width:100%;
+    width: 100%;
 }
+
 .heading {
     text-align: center;
 }
+
 .leftheading {
-    text-align:  left;
+    text-align: left;
 }
+
 .subheading {
     width: 80%;
     margin: 0 auto 30px;
@@ -177,6 +183,7 @@ a:hover {
 .zoomeffect:hover img {
     transform: scale(1.1);
 }
+
 a.btn {
     padding: 8px 20px 9px;
     border-radius: 4px;
@@ -193,6 +200,7 @@ a.btn.btn-primary {
 a.btn.btn-secondary {
     background: var(--secondary);
 }
+
 a.btn.btn-light {
     background: var(--white);
 }
@@ -207,23 +215,28 @@ a.btn.btn-light {
     background: var(--primary);
     padding: 8px 0;
 }
+
 .menubar .row {
     align-items: center;
 }
+
 .menubar ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     column-gap: 45px;
 }
+
 .topbar ul li a {
     color: var(--white);
 }
+
 .topbar ul {
     display: flex;
     align-items: center;
     column-gap: 25px;
 }
+
 .topbar ul.smoicon {
     justify-content: flex-end;
 }
@@ -241,8 +254,9 @@ a.btn.btn-light {
 .mainbanner {
     position: relative;
     overflow: hidden;
-  }
-  .mainbanner .mainbanner-caption {
+}
+
+.mainbanner .mainbanner-caption {
     opacity: 0;
     outline: 2px solid var(--primary);
     outline-offset: 10px;
@@ -254,15 +268,17 @@ a.btn.btn-light {
     transform: translateY(-50%);
     background: #fff;
     padding: 45px;
-  }
-  @keyframes slide {
+}
+
+@keyframes slide {
     100% {
-      opacity: 1;
-      left: 50%;
-      transform: translate(-50%, -50%);
+        opacity: 1;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-  }
-  .mainbanner-caption h1 {
+}
+
+.mainbanner-caption h1 {
     margin: 0;
     color: var(--primary);
     line-height: 1;
@@ -272,6 +288,7 @@ a.btn.btn-light {
     text-transform: uppercase;
     font-weight: 400;
 }
+
 .mainbanner-caption h1 span {
     font-size: 45px;
     color: var(--secondary);
@@ -280,24 +297,26 @@ a.btn.btn-light {
     font-weight: 600;
     text-shadow: 3px 3px #00000029;
 }
-  
-  .mainbanner img {
+
+.mainbanner img {
     width: 100%;
     height: 600px;
     object-fit: cover;
     animation: scale 10s 4.2s forwards;
     filter: brightness(0.8);
-  }
-  @keyframes scale {
+}
+
+@keyframes scale {
     from {
-      transform: scale(1);
+        transform: scale(1);
     }
-  
+
     to {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
-  }
-  .mainbanner:after {
+}
+
+.mainbanner:after {
     position: absolute;
     content: '';
     left: 0;
@@ -308,24 +327,27 @@ a.btn.btn-light {
     background: #092054;
     animation: move 1.5s ease-in-out 1.5s forwards;
     opacity: 0;
-  }
-  @keyframes move {
+}
+
+@keyframes move {
     0% {
-      left: -60%;
-      width: 20%;
-      clip-path:polygon(0 0, 100% 0, 100% 100%, 100% 0, 100% 100%, 0 100%)
+        left: -60%;
+        width: 20%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0, 100% 100%, 0 100%)
     }
+
     50% {
-      left: 0;
-      width: 60%;
+        left: 0;
+        width: 60%;
     }
+
     100% {
-      left: 0;
-      width: 60%;
-      clip-path:polygon(0 0, 100% 0, 100% 100%, 100% 0, 70% 100%, 0 100%);
-      opacity: .9;
+        left: 0;
+        width: 60%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0, 70% 100%, 0 100%);
+        opacity: .9;
     }
-  }
+}
 
 /* FEATURES SECTION CSS */
 
@@ -333,12 +355,14 @@ a.btn.btn-light {
     padding: 60px 0;
     background: #f8f8f8;
 }
+
 .featurelist {
     background: var(--white);
     padding: 35px 25px 25px;
     text-align: center;
     box-shadow: 0 0 12px #0000001a;
 }
+
 .featurelist fa-icon {
     background: var(--primary);
     color: var(--white);
@@ -350,12 +374,15 @@ a.btn.btn-light {
     border-radius: 50%;
     font-size: 22px;
 }
+
 .featurelist h3 {
     margin: 15px 0 10px;
 }
+
 .featurelist p {
     margin: 0;
 }
+
 .features .col-sm-4:nth-child(2) .featurelist {
     background: var(--primary);
 }
@@ -376,9 +403,11 @@ a.btn.btn-light {
 .homeabout {
     padding: 50px 0;
 }
+
 .homeabout figure {
     margin: 0;
 }
+
 .homeabout figure img {
     width: 100%;
     height: auto;
@@ -387,14 +416,17 @@ a.btn.btn-light {
 .homeabout .row {
     align-items: center;
 }
+
 .homeabout-content {
     padding-left: 25px;
     border-left: 2px dotted var(--primary);
 }
+
 .homeabout-content h2.leftheading {
     font-weight: 500;
     font-size: 28px;
 }
+
 .homeabout-content p {
     text-align: justify;
     margin: 12px 0 20px;
@@ -414,6 +446,7 @@ a.btn.btn-light {
     padding: 60px 0;
     background: linear-gradient(#ff3273d1, #ff3273c6), url(assets/images/buildwebsite-bg.jpg)no-repeat center center/cover;
 }
+
 .buildwebsite .row {
     align-items: center;
 }
@@ -437,17 +470,21 @@ a.btn.btn-light {
 .homeservice {
     padding: 45px 0 60px;
 }
-.homeservice .row{
+
+.homeservice .row {
     row-gap: 23px;
 }
+
 .homeservicelist {
     box-shadow: 0 0 15px #00000024;
 }
+
 .homeservicelist figure {
     overflow: hidden;
     position: relative;
     margin: 0;
 }
+
 .homeservicelist img {
     transition: .5s;
     width: 100%;
@@ -457,20 +494,25 @@ a.btn.btn-light {
 .homeservice-info {
     padding: 22px 30px;
     transition: .5s;
-}  
+}
+
 .homeservice-info h3 {
     transition: .5s;
     margin-bottom: 12px;
 }
+
 .homeservice-info p {
     transition: .5s;
 }
-.homeservicelist:hover .homeservice-info{
+
+.homeservicelist:hover .homeservice-info {
     background: var(--primary);
 }
-.homeservicelist:hover h3, .homeservicelist:hover p{
+
+.homeservicelist:hover h3, .homeservicelist:hover p {
     color: var(--white);
 }
+
 .homeservicelist:hover figure img {
     transform: scale(1.4) rotate(15deg);
     filter: brightness(.5);
@@ -479,10 +521,11 @@ a.btn.btn-light {
 
 /* WHO WE ARE SECTION CSS */
 
-.who-we-are{
+.who-we-are {
     padding: 60px 0;
     background: url(assets/images/whoweare-bg.jpg)no-repeat center center/cover;
 }
+
 .who-we-are ul {
     display: flex;
     justify-content: space-between;
@@ -513,21 +556,26 @@ a.btn.btn-light {
 .portfolio {
     padding: 55px 0;
 }
-.portfolio .row{
+
+.portfolio .row {
     row-gap: 23px;
 }
+
 .shorting, .mix {
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .portfolio-area {
     position: relative;
     padding-bottom: 70px;
     z-index: 1;
-    }
+}
+
 .shorting-menu {
     text-align: center;
     margin-bottom: 40px;
 }
+
 .filter {
     border: none;
     margin: 0 15px;
@@ -539,6 +587,7 @@ a.btn.btn-light {
     transition: .5s;
     z-index: 1;
 }
+
 .filter::before {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     background: #bbbbbb;
@@ -550,6 +599,7 @@ a.btn.btn-light {
     margin-top: -4px;
     height: 10px;
 }
+
 .filter::after {
     position: absolute;
     content: '';
@@ -564,12 +614,15 @@ a.btn.btn-light {
     bottom: 8px;
     transform: rotate(0);
 }
-.filter:first-child::before{
-     display: none;
+
+.filter:first-child::before {
+    display: none;
 }
+
 .filter:hover, .filter:focus, .filter.mixitup-control-active {
     color: var(--primary);
 }
+
 .filter:hover::after {
     opacity: 1;
     transform: rotate(45deg);
@@ -582,29 +635,34 @@ a.btn.btn-light {
     overflow: hidden;
     position: relative;
 }
+
 .single-work:hover .work-image img, .single-work:focus .work-image img {
     transform: scale(1.3);
 }
-.single-work:hover .work-overlay:before, .single-work:focus .work-overlay:before{
+
+.single-work:hover .work-overlay:before, .single-work:focus .work-overlay:before {
     right: 0;
     opacity: 1;
     width: 100%;
     height: 50%;
     transition: all .8s;
 }
-.single-work:hover .work-overlay:after, .single-work:focus .work-overlay:after{
+
+.single-work:hover .work-overlay:after, .single-work:focus .work-overlay:after {
     left: 0;
     opacity: 1;
     transition: all .8s;
 }
-.single-work:hover .work-overlay span, .single-work:focus .work-overlay span, .single-work:hover .work-overlay h3, .single-work:focus .work-overlay h3{
+
+.single-work:hover .work-overlay span, .single-work:focus .work-overlay span, .single-work:hover .work-overlay h3, .single-work:focus .work-overlay h3 {
     color: var(--white);
 }
-.single-work:hover .work-overlay span:before, .single-work:focus .work-overlay span:before{
+
+.single-work:hover .work-overlay span:before, .single-work:focus .work-overlay span:before {
     right: -100%;
 }
 
-.single-work:hover .work-overlay h3:before, .single-work:focus .work-overlay h3:before{
+.single-work:hover .work-overlay h3:before, .single-work:focus .work-overlay h3:before {
     left: -100%;
 }
 
@@ -617,14 +675,17 @@ a.btn.btn-light {
     height: 100%;
     z-index: 1;
 }
+
 .single-work .work-image {
     position: relative;
 }
+
 .single-work img {
     transition: .5s;
     height: 100%;
     width: 100%;
 }
+
 .single-work .work-overlay {
     position: absolute;
     overflow: hidden;
@@ -633,6 +694,7 @@ a.btn.btn-light {
     right: 10px;
     bottom: 10px;
 }
+
 .single-work .work-overlay::before {
     content: '';
     transition: .5s;
@@ -643,6 +705,7 @@ a.btn.btn-light {
     background: var(--primary);
     right: -100%;
 }
+
 .single-work .work-overlay::after {
     content: '';
     transition: .5s;
@@ -653,6 +716,7 @@ a.btn.btn-light {
     width: 100%;
     left: -100%;
 }
+
 .single-work .work-overlay h3 {
     color: transparent;
     overflow: hidden;
@@ -666,6 +730,7 @@ a.btn.btn-light {
     font-size: 22px;
     font-weight: 600;
 }
+
 .single-work .work-overlay h3::before {
     content: '';
     background: var(--dark);
@@ -677,6 +742,7 @@ a.btn.btn-light {
     top: 0;
     right: auto;
 }
+
 .single-work .work-overlay span {
     color: transparent;
     overflow: hidden;
@@ -708,6 +774,7 @@ a.btn.btn-light {
     padding: 60px 0;
     background: #fafaff;
 }
+
 .homecontact-dtls {
     padding: 35px;
     background: var(--white);
@@ -727,6 +794,7 @@ a.btn.btn-light {
     font-weight: 300;
     font-size: 17px;
 }
+
 .homecontact-dtls ul li {
     display: flex;
     align-items: center;
@@ -757,11 +825,11 @@ a.btn.btn-light {
 
 
 
-/* FOOTER SECTION CSS */    
+/* FOOTER SECTION CSS */
 
 footer {
     background: #050414;
-    padding:35px 0;
+    padding: 35px 0;
 }
 
 
@@ -771,6 +839,7 @@ footer ul {
     align-items: center;
     column-gap: 10px;
 }
+
 footer ul li a, footer p {
     color: var(--white);
     margin: 0;
@@ -793,6 +862,7 @@ footer ul li a, footer p {
 .breadcrumb .row {
     align-items: center;
 }
+
 .breadcrumb ul {
     display: flex;
     justify-content: flex-end;
@@ -818,21 +888,15 @@ footer ul li a, footer p {
     top: 52%;
     transform: translateY(-48%);
 }
-.secondary-container{
+
+.secondary-container {
     padding: 60px 0;
 }
 
 
+/* ERROR PAGE CSS */
 
-
-
-
-
-
-
-
-
-
-
-
-
+.errorpage figure {
+    text-align: center;
+    margin: 0;
+}

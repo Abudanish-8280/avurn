@@ -23,7 +23,9 @@ import { LogoComponent } from './header/menubar/logo/logo.component';
 import { NavMenuComponent } from './header/menubar/nav-menu/nav-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { WhoweareComponent } from './whoweare/whoweare.component'
+import { WhoweareComponent } from './whoweare/whoweare.component';
+import { TestapiComponent } from './testapi/testapi.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { WhoweareComponent } from './whoweare/whoweare.component'
     LogoComponent,
     NavMenuComponent,
     PortfolioComponent,
-    WhoweareComponent
+    WhoweareComponent,
+    TestapiComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,

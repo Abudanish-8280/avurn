@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
+import { TestapiComponent } from './testapi/testapi.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 
 const routes: Routes = [
@@ -31,6 +33,14 @@ const routes: Routes = [
 {
   path: 'contactus',
   component: ContactusComponent
+},
+{
+  path: 'testapi',
+  component: TestapiComponent
+},
+{
+  path: '**',
+  component: ErrorpageComponent
 }
 ];
 
