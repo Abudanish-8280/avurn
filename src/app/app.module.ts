@@ -25,7 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { TestapiComponent } from './testapi/testapi.component';
-import { ErrorpageComponent } from './errorpage/errorpage.component'
+import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { TestpageComponent } from './testpage/testpage.component'
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component'
     PortfolioComponent,
     WhoweareComponent,
     TestapiComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    TestpageComponent
   ],
   imports: [
     BrowserModule,

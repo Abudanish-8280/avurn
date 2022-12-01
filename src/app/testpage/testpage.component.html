@@ -1,0 +1,156 @@
+<div class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>{{ title }}</h2>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a routerLink="">Home</a></li>
+                    <li>{{ title }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="secondary-container">
+    <div class="container">
+
+        <!-- How Get Input Value In Angular -->
+
+        <h1>Get Input Box Value :-</h1>
+        <form>
+            <input (input)="getData(dataBox.value)" #dataBox type="text" placeholder="Enter Name">
+            <input type="submit" (click)="getData(dataBox.value)" value="Update Click">
+        </form>
+        <h3>Input Value Is: </h3>
+        {{ data }}
+
+        <!-- How To Create a Counter In Angular  -->
+
+        <h1 class="mt-2">Counter Increment and Decrement :-</h1>
+
+        <button (click)="counter('add');">++</button>
+        <span class="mx-2">{{ count }}</span>
+        <button (click)="counter('minus');">--</button>
+
+        <!-- Property Binding In Angular -->
+
+        <h1 class="mt-2">Property Binding in Angular :-</h1>
+
+        <input type="text" value={{name}} disabled="disable">
+        <input type="text" [value]=name [disabled]=disable>
+
+        <!-- If Else Conditions In Angular -->
+
+        <h1 class="mt-2">If Else Conditions in Angular :-</h1>
+
+        <h2 *ngIf="conditions then IfBlock else ElseBlock"></h2>
+        <ng-template #IfBlock>
+            <h2>If Block Content</h2>
+        </ng-template>
+        <ng-template #ElseBlock>
+            <h2>Else Block Content</h2>
+        </ng-template>
+        <button (click)="ifBlock('if');">Click Here</button>
+
+        <!-- Else If Conditions In Angular -->
+
+        <h1 class="mt-2">Else If Conditions in Angular :-</h1>
+
+        <ng-template [ngIf]="color==='red'">
+            <h2 style="color:red;">Red Color</h2>
+        </ng-template>
+        <ng-template [ngIf]="color==='green'">
+            <h2 style="color: green;">Green Color</h2>
+        </ng-template>
+        <ng-template [ngIf]="color==='blue'">
+            <h2 style="color:blue;">Blue Color</h2>
+        </ng-template>
+
+        <!-- Switch Case in Angular -->
+
+        <h1 class="mt-2">Switch Case in Angular :-</h1>
+
+
+        <div [ngSwitch]="colorText">
+            <h2 *ngSwitchCase="'red'" style="color:red">Red Color</h2>
+            <h2 *ngSwitchCase="'blue'" style="color:blue">Blue Color</h2>
+            <h2 *ngSwitchCase="'green'" style="color:green">Green Color</h2>
+            <h2 *ngSwitchCase="'yellow'" style="color:yellow">Yellow Color</h2>
+            <h2 *ngSwitchCase="'pink'" style="color:pink">Pink Color</h2>
+            <h2 *ngSwitchCase="'purple'" style="color:purple">Purple Color</h2>
+            <h2 *ngSwitchDefault style="color:black">Default Color</h2>
+        </div>
+
+        <!-- For Loop in Angular -->
+
+        <h1 class="mt-2">For Loop in Angular :-</h1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr *ngFor="let item of students">
+                <td>{{ item.name }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.phone }}</td>
+            </tr>
+        </table>
+
+
+        <h1 class="mt-2">Nested Loop in Angular :-</h1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Social Account</th>
+            </tr>
+            <tr *ngFor="let item of studentsdtls">
+                <td>{{ item.name }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.phone }}</td>
+                <td>
+                    <ul *ngFor="let account of item.socialaccount">
+                        <li>{{ account }}</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+
+        <h1 class="mt-2">Style Binding in Angular :-</h1>
+
+        <h2 [style.color]="textColor" [style.backgroundColor]="bgColor">Color Change</h2>
+        <a (click)="redColor();" class="btn btn-primary">Blue Color</a>
+        <a (click)="greenColor();" class="btn btn-success">Green Color</a>
+        <a (click)="yellowColor();" class="btn btn-warning">Yellow Color</a>
+        <a (click)="darkColor();" class="btn btn-dark">Purple Color</a>
+
+        <h1 class="mt-2">Toggle Event in Angular :-</h1>
+
+        <h2 *ngIf="display">Toggle Button Working Fine.</h2>
+        <a class="btn btn-primary" (click)="toggleBtn();">Toggle Button</a>
+
+
+        <h1 class="mt-2">TudoList in Angular :-</h1>
+
+        <p>todulist works!</p>
+<input type="text" placeholder="Enter the task" #task>
+<button mat-raised-button color="primary" (click)="addTask(task.value);">Add Task</button>
+<div class="row py-5">
+<div class="col-sm-6">
+  <table>
+    <tr *ngFor="let item of tudoList">
+      <td>{{ item.name }}</td>
+      <td><button mat-raised-button color="warn" (click)="removeTask(item.id);">Remove</button></td>
+    </tr>
+  </table> 
+</div>
+
+    </div>
+</div>

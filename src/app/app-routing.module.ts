@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { TestapiComponent } from './testapi/testapi.component';
+import { TestpageComponent } from './testpage/testpage.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
 {
   path: 'testapi',
   component: TestapiComponent
+},
+{
+  path: 'testpage',
+  component: TestpageComponent
 },
 {
   path: '**',
