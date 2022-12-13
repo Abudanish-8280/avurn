@@ -12,6 +12,14 @@
         sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
         aliqua.</strong></h2>
     <div class="row">
+      <div class="col-sm-4" *ngFor="let featuers of featuresApiData">
+        <div class="featurelist">
+          <fa-icon [icon]="faChartPie"></fa-icon>
+          <h1> {{ featuers.id }}</h1>
+          <h3>{{ featuers.title }}</h3>
+          <p>{{ featuers.description }}</p>
+        </div>
+      </div>
       <div class="col-sm-4">
         <div class="featurelist">
           <fa-icon [icon]="faChartPie"></fa-icon>

@@ -26,7 +26,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { TestapiComponent } from './testapi/testapi.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
-import { TestpageComponent } from './testpage/testpage.component'
+import { TestpageComponent } from './testpage/testpage.component';
+import { ReusableComponent } from './reusable/reusable.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule  } from '@angular/forms'; '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,10 @@ import { TestpageComponent } from './testpage/testpage.component'
     WhoweareComponent,
     TestapiComponent,
     ErrorpageComponent,
-    TestpageComponent
+    TestpageComponent,
+    ReusableComponent,
+    AdminComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -58,7 +66,10 @@ import { TestpageComponent } from './testpage/testpage.component'
     BrowserAnimationsModule,
     MatButtonModule,
     FontAwesomeModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

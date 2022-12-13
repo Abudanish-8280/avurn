@@ -1,0 +1,12 @@
+{
+  "features": [
+    {
+      "title": "Title One",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus velit nec."
+    },
+    {
+      "title": "Title Two",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus velit nec."
+    }
+  ]
+}

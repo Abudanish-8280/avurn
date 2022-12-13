@@ -355,6 +355,9 @@ a.btn.btn-light {
     padding: 60px 0;
     background: #f8f8f8;
 }
+.features .row {
+    row-gap: 23px;
+}
 
 .featurelist {
     background: var(--white);

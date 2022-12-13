@@ -1,0 +1,32 @@
+<div class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>{{ title }}</h2>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a routerLink="">Home</a></li>
+                    <li>{{ title }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="secondary-container">
+    <div class="container">
+        <form #ngAdduser="ngForm" (ngSubmit)="adduser(ngAdduser.value)">
+            <input type="text" ngModel name="title" placeholder="Enter Name">
+            <input type="text" ngModel name="email" placeholder="Enter Email">
+            <button mat-raised-button color="accent">Add UserID</button>
+        </form>
+
+        <ul>
+            <li *ngFor="let fdata of featurespostData">
+                {{fdata.title}}
+                {{fdata.email}}
+            </li>
+        </ul>
+       
+    </div> 
+</div>

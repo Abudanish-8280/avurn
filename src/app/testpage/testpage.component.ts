@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-testpage',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TestpageComponent implements OnInit {
 
   constructor() { }
-
+@Input () Numdata = 0;
   ngOnInit(): void {
   }
   title = "Test Page";
@@ -29,7 +29,7 @@ export class TestpageComponent implements OnInit {
   }
 
   // Property Binding
-  
+
   name= 'Value';
   disable = false;
 
@@ -117,5 +117,6 @@ export class TestpageComponent implements OnInit {
   removeTask(id:number){
     this.tudoList=this.tudoList.filter(item=>item.id!==id)
   }
+
 
 }
